@@ -10,40 +10,41 @@
 --------------
 Employee Data
 ---------------
-@relation employee
-@attribute name {x,y,z,a,b}
+@relation employee 
+@attribute name {yuji,hinata,gojo,rin,megumi} 
 @attribute id numeric
-@attribute salary {low,medium,high}
+@attribute salary {low,medium,high} 
 @attribute exp numeric
-@attribute gender {male,female}
+@attribute gender {male,female} 
 @attribute phone numeric
-@data
-x,101,low,2,male,250311
-y,102,high,3,female,251665
-z,103,medium,1,male,240238
-a,104,low,5,female,200200
-b,105,high,2,male,240240
+@data 
+yuji,101,low,5,male,250345 
+hinata,102,high,2,female,234567
+gojo,103,medium,3,male,278685
+rin,104,low,4,female,280695
+megumi,105,high,1,male,218384
 
 --------------
 Weather Data
 ---------------
 @relation weather
-@attribute outlook {sunny,rainy,overcast}
-@attribute temparature numeric
+@attribute outlook {sunny,rainy,overcast} 
+@attribute temparature numeric 
 @attribute humidity numeric
-@attribute windy {true,false}
+@attribute windy {true,false} 
 @attribute play {yes,no}
-@data
-sunny,85.0,85.0,false,no
-overcast,80.0,90.0,true,no
-sunny,83.0,86.0,false,yes
-rainy,70.0,86.0,false,yes
-rainy,68.0,80.0,false,yes
-rainy,65.0,70.0,true,no
-overcast,64.0,65.0,false,yes
-sunny,72.0,95.0,true,no
-sunny,69.0,70.0,false,yes
-rainy,75.0,80.0,false,yes
+@data 
+rainy,80.0,90.0,false,no 
+overcast,75.0,85.0,true,yes
+sunny,85.0,95.0,false,no
+rainy,73.0,86.0,false,no 
+overcast,87.0,93.0,false,yes 
+sunny,63.0,70.0,true,yes 
+rainy,78.0,88.0,false,yes 
+overcast,93.0,95.0,true,no
+sunny,71.0,73.0,false,yes 
+rainy,91.0,92.0,false,no
+
 ```
 3) After that the file is saved with .arff file format.
 4) Minimize the arff file and then open Start -> Programs -> weka-3-4.
@@ -53,7 +54,66 @@ rainy,75.0,80.0,false,yes
 8) Click on edit button which shows employee table on weka.
 
 ### OUTPUT:
+EX1 - Creation of Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform Preprocessing
+DATE: 10.02.2024
+AIM:
+To Create Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform preprocessing
 
+PROCEDURE:
+Open Start -> Programs -> Accessories -> Notepad
+Type the following training data set with the help of Notepad for Employee Table.
+--------------
+Employee Data
+---------------
+@relation employee 
+@attribute name {x,y,z,a,b} 
+@attribute id numeric
+@attribute salary {low,medium,high} 
+@attribute exp numeric
+@attribute gender {male,female} 
+@attribute phone numeric
+
+@data 
+x,110,low,2,male,201214
+y,111,high,1,female,201215
+z,112,medium,4,male,201213 
+a,113,low,3,female,201212 
+b,114,high,5,male,201216
+
+--------------
+Weather Data
+---------------
+@relation weather
+@attribute outlook {sunny,rainy,overcast} 
+@attribute temparature numeric 
+@attribute humidity numeric
+@attribute windy {true,false} 
+@attribute play {yes,no}
+
+@data 
+rainy,69.0,70.0,false,no
+sunny,81.0,86.0,false,yes 
+rainy,69.0,76.0,true,no 
+overcast,64.0,65.0,false,yes 
+sunny,72.0,85.0,true,no 
+rainy,70.0,78.0,false,yes 
+sunny,82.0,85.0,true,no
+overcast,80.0,86.0,true,yes
+sunny,78.0,80.0,true,yes 
+rainy,65.0,70.0,false,no 
+After that the file is saved with .arff file format.
+Minimize the arff file and then open Start -> Programs -> weka-3-4.
+Click on weka-3-4, then Weka dialog box is displayed on the screen.
+In that dialog box there are four modes, click on explorer.
+Explorer shows many options. In that click on ‘open file’ and select the arff file
+Click on edit button which shows employee table on weka.
+
+### OUTPUT:
+Training Data Set -> Employee Table
+![1w](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/36a6b9fd-2a1c-47f1-9be5-de254ab3464c)
+
+Training Data Set-> Weather Table
+![1bans](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/9734a866-1042-4af1-b988-979b15347284)
 
 
 ### PREPROCESSING
@@ -75,6 +135,13 @@ rainy,75.0,80.0,false,yes
 14) Click on the Edit button, it shows a new Weather Table on Weka.
 
 ### OUTPUT:
+Employee Table after adding new attribute ADDRESS
+
+![1dadd](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/44a05854-ace9-4d13-befd-ab36a8ff47a6)
+
+Weather Table after adding new attribute CLIMATE:
+
+![1cans](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/5cb982d1-2e6f-4bed-8e1b-553099666eda)
 
 ### 2) Remove -> Pre-Processing Technique:
 
@@ -91,6 +158,13 @@ rainy,75.0,80.0,false,yes
 11) Click on the Edit button, it shows a new Weather Table on Weka.
 
 ### OUTPUT:
+* Employee Table after removing attributes SALARY, GENDER:
+
+![idrem](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/19a03555-080c-4fd0-8853-55aca05e7fe2)
+
+Weather Table after removing attributes WINDY, PLAY:
+
+![1cansremove](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/e41d7202-15eb-4ad2-9cfb-bb691a956bb8)
 
 ### Normalize -> Pre-Processing Technique:
 
@@ -107,5 +181,14 @@ rainy,75.0,80.0,false,yes
 11) Click on the Edit button, it shows a new Weather Table with normalized values on Weka.
 
 ### OUTPUT:
+
+Employee Table after Normalizing ID, EXP, PHONE:
+
+![1dnorm](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/48a8fa21-451f-49dc-b21d-36e35e9f32a1)
+
+Weather Table after Normalizing TEMPARATURE, HUMIDITY:
+
+![1cansnorm](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/97c1c104-aec2-4d9d-a5ab-3709e22a0e72)
+
 ### RESULT: 
   Thus the program for generating employee and weather datasets has been developed, and preprocessing has been accomplished successfully.
