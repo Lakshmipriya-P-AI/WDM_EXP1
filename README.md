@@ -59,8 +59,8 @@ rainy,91.0,92.0,false,no
 ![1w](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/36a6b9fd-2a1c-47f1-9be5-de254ab3464c)
 
 * Training Data Set-> Weather Table
-![1bans](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/9734a866-1042-4af1-b988-979b15347284)
 
+![1bans](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/77233a56-328c-46a8-8315-321f2c228035)
 
 ### PREPROCESSING
 ### Procedure:
