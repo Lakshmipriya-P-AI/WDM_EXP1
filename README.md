@@ -54,65 +54,7 @@ rainy,91.0,92.0,false,no
 8) Click on edit button which shows employee table on weka.
 
 ### OUTPUT:
-EX1 - Creation of Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform Preprocessing
-DATE: 10.02.2024
-AIM:
-To Create Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform preprocessing
 
-### PROCEDURE:
-Open Start -> Programs -> Accessories -> Notepad
-Type the following training data set with the help of Notepad for Employee Table.
-```
---------------
-Employee Data
----------------
-@relation employee 
-@attribute name {x,y,z,a,b} 
-@attribute id numeric
-@attribute salary {low,medium,high} 
-@attribute exp numeric
-@attribute gender {male,female} 
-@attribute phone numeric
-
-@data 
-x,110,low,2,male,201214
-y,111,high,1,female,201215
-z,112,medium,4,male,201213 
-a,113,low,3,female,201212 
-b,114,high,5,male,201216
-```
-
-```
---------------
-Weather Data
----------------
-@relation weather
-@attribute outlook {sunny,rainy,overcast} 
-@attribute temparature numeric 
-@attribute humidity numeric
-@attribute windy {true,false} 
-@attribute play {yes,no}
-
-@data 
-rainy,69.0,70.0,false,no
-sunny,81.0,86.0,false,yes 
-rainy,69.0,76.0,true,no 
-overcast,64.0,65.0,false,yes 
-sunny,72.0,85.0,true,no 
-rainy,70.0,78.0,false,yes 
-sunny,82.0,85.0,true,no
-overcast,80.0,86.0,true,yes
-sunny,78.0,80.0,true,yes 
-rainy,65.0,70.0,false,no 
-After that the file is saved with .arff file format.
-Minimize the arff file and then open Start -> Programs -> weka-3-4.
-Click on weka-3-4, then Weka dialog box is displayed on the screen.
-In that dialog box there are four modes, click on explorer.
-Explorer shows many options. In that click on ‘open file’ and select the arff file
-Click on edit button which shows employee table on weka.
-```
-
-### OUTPUT:
 * Training Data Set -> Employee Table
 ![1w](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/36a6b9fd-2a1c-47f1-9be5-de254ab3464c)
 
