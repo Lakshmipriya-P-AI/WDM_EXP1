@@ -1,5 +1,5 @@
 ### EX1 Creation of Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform Preprocessing
-### DATE: 
+### DATE: 10.02.24
 ### AIM: 
   To Create Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform preprocessing
 ### PROCEDURE: 
@@ -59,9 +59,10 @@ DATE: 10.02.2024
 AIM:
 To Create Employee, Weather dataset in WEKA Data Mining and Analysis Tool and perform preprocessing
 
-PROCEDURE:
+### PROCEDURE:
 Open Start -> Programs -> Accessories -> Notepad
 Type the following training data set with the help of Notepad for Employee Table.
+```
 --------------
 Employee Data
 ---------------
@@ -79,7 +80,9 @@ y,111,high,1,female,201215
 z,112,medium,4,male,201213 
 a,113,low,3,female,201212 
 b,114,high,5,male,201216
+```
 
+```
 --------------
 Weather Data
 ---------------
@@ -107,12 +110,13 @@ Click on weka-3-4, then Weka dialog box is displayed on the screen.
 In that dialog box there are four modes, click on explorer.
 Explorer shows many options. In that click on ‘open file’ and select the arff file
 Click on edit button which shows employee table on weka.
+```
 
 ### OUTPUT:
-Training Data Set -> Employee Table
+* Training Data Set -> Employee Table
 ![1w](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/36a6b9fd-2a1c-47f1-9be5-de254ab3464c)
 
-Training Data Set-> Weather Table
+* Training Data Set-> Weather Table
 ![1bans](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/9734a866-1042-4af1-b988-979b15347284)
 
 
@@ -135,11 +139,11 @@ Training Data Set-> Weather Table
 14) Click on the Edit button, it shows a new Weather Table on Weka.
 
 ### OUTPUT:
-Employee Table after adding new attribute ADDRESS
+* Employee Table after adding new attribute ADDRESS
 
 ![1dadd](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/44a05854-ace9-4d13-befd-ab36a8ff47a6)
 
-Weather Table after adding new attribute CLIMATE:
+* Weather Table after adding new attribute CLIMATE:
 
 ![1cans](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/5cb982d1-2e6f-4bed-8e1b-553099666eda)
 
@@ -162,7 +166,7 @@ Weather Table after adding new attribute CLIMATE:
 
 ![idrem](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/19a03555-080c-4fd0-8853-55aca05e7fe2)
 
-Weather Table after removing attributes WINDY, PLAY:
+* Weather Table after removing attributes WINDY, PLAY:
 
 ![1cansremove](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/e41d7202-15eb-4ad2-9cfb-bb691a956bb8)
 
@@ -182,11 +186,11 @@ Weather Table after removing attributes WINDY, PLAY:
 
 ### OUTPUT:
 
-Employee Table after Normalizing ID, EXP, PHONE:
+* Employee Table after Normalizing ID, EXP, PHONE:
 
 ![1dnorm](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/48a8fa21-451f-49dc-b21d-36e35e9f32a1)
 
-Weather Table after Normalizing TEMPARATURE, HUMIDITY:
+* Weather Table after Normalizing TEMPARATURE, HUMIDITY:
 
 ![1cansnorm](https://github.com/Lakshmipriya-P-AI/WDM_EXP1/assets/93427923/97c1c104-aec2-4d9d-a5ab-3709e22a0e72)
 
